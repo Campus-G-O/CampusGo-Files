@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Business Name | Healthy meals and odd jobs for students</title>
+  <meta name="description" content="Healthy ready-to-eat meals for students, plus a job board where students help each other with grocery runs, waiting in line, printing and more.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">CampusGo</a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="#meals">Meals</a></li>
+          <li><a href="#jobs">Odd jobs</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="container">
+        <h1>One Call Closer.</h1>
+        <p class="lead">Healthy ready-to-eat meals for students, plus a job board where students help each other with the small stuff.</p>
+
+        <div class="tiles">
+          <a class="tile tile--meals" href="#meals">
+            <span class="tile-title">Healthy ready-to-eat meals</span>
+            <span class="tile-text">Choose from 3 meal options made for a student schedule.</span>
+            <span class="tile-link">See the meal options</span>
+          </a>
+          <a class="tile tile--jobs" href="#jobs">
+            <span class="tile-title">Student odd jobs</span>
+            <span class="tile-text">Post a task, or pick one up from another student.</span>
+            <span class="tile-link">Browse odd jobs</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== MEALS ===================== -->
+    <section class="section" id="meals" aria-labelledby="meals-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="meals-title">Pick your meal option</h2>
+          <p>Three options to choose from. Pick one, then fill in the order form below.</p>
+        </div>
+
+        <!--
+          EDIT THE MEAL OPTIONS HERE.
+          Each <article class="slot"> is one option. For each one:
+            1. (Optional) change "Option 1" to a plan name.
+            2. Type the food type inside the first <dd class="fill"> ... </dd>
+            3. Type the price inside the second <dd class="fill"> ... </dd>
+        
+        -->
+        <div class="tray">
+
+          <article class="slot slot--leaf">
+            <h3>Option 1</h3>
+            <dl class="details">
+              <div class="detail">
+                <dt>Food type</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Option 1</a>
+          </article>
+
+          <article class="slot slot--mango">
+            <h3>Option 2</h3>
+            <dl class="details">
+              <div class="detail">
+                <dt>Food type</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Option 2</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <h3>Option 3</h3>
+            <dl class="details">
+              <div class="detail">
+                <dt>Food type</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Option 3</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ORDER FORM ===================== -->
+    <section class="section section--tight" id="order" aria-labelledby="order-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="order-title">Place your meal order</h2>
+          <p>Enter your name and the meal option you chose.</p>
+        </div>
+
+        <div class="form-slot">
+    <iframe
+      id="JotFormIFrame-262635369538065"
+      title="Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen; payment"
+      src="https://form.jotform.com/262635369538065"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262635369538065']", "https://form.jotform.com/")</script>
+    
+            <p class="placeholder-title">Order form coming soon</p>
+            <p>Check back shortly to place your order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ODD JOBS ===================== -->
+    <section class="section section--jobs" id="jobs" aria-labelledby="jobs-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="jobs-title">Odd jobs, done by students</h2>
+          <p>Need a hand? Post a job. Have free time? Take one. Jobs are posted by students and by our team.</p>
+        </div>
+
+        <!-- Types of jobs. Add, remove or rename cards freely. -->
+        <ul class="job-types">
+          <li class="job-type">
+            <h3>Grocery run</h3>
+            <p>Someone picks up your list from the grocery lounge and brings it to you.</p>
+          </li>
+          <li class="job-type">
+            <h3>Waiting in line</h3>
+            <p>Hold your spot in a queue while you finish class or work.</p>
+          </li>
+          <li class="job-type">
+            <h3>Printing</h3>
+            <p>Send your files and get them printed and delivered.</p>
+          </li>
+          <li class="job-type">
+            <h3>Something else</h3>
+            <p>Post any small task another student can handle.</p>
+          </li>
+        </ul>
+
+        <h3 class="subhead">How it works</h3>
+        <ol class="steps">
+          <li class="step">
+            <h4>Post a job</h4>
+            <p>Describe the task, where and when you need it, and the pay.</p>
+          </li>
+          <li class="step">
+            <h4>A student takes it</h4>
+            <p>Another student signs up for the job you posted.</p>
+          </li>
+          <li class="step">
+            <h4>Get it done</h4>
+            <p>Meet in a public spot on campus and finish the task.</p>
+          </li>
+        </ol>
+
+        <h3 class="subhead" id="open-jobs">Open jobs</h3>
+        <div class="board">
+          <!--
+            JOB BOARD SLOT
+            Later, this can show the jobs people post (gon set it up with Jotform).
+          -->
+          <p class="board-title">No jobs posted yet</p>
+          <p>Use the form below to post the first one.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-panel" id="post-job">
+            <h3>Post a job</h3>
+            <p>Share your name, the type of job, and the details.</p>
+            <div class="form-slot">
+              <!--
+                JOTFORM SLOT (post a job)
+                Delete the placeholder below and paste my Jotform embed code here.
+              -->
+              <div class="form-placeholder">
+                <p class="placeholder-title">Job form coming soon</p>
+                <p>You will be able to post a job here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-panel" id="take-job">
+            <h3>Take a job</h3>
+            <p>Tell us your name and which job you want to take.</p>
+            <div class="form-slot">
+              <!--
+                JOTFORM SLOT (take a job)
+                Delete the placeholder below and paste your Jotform embed code here.
+              -->
+              <div class="form-placeholder">
+                <p class="placeholder-title">Sign-up form coming soon</p>
+                <p>You will be able to sign up for a job here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about">
+          <h2 id="about-title">Made by students, for students</h2>
+          <!-- EDIT: replace with your own team story -->
+          <p>We started this as a school project to solve two everyday student problems: finding a healthy meal between classes, and finding time for small errands. Our meals are ready to eat, and our job board connects students who need help with students who have time to give it.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 CampusGo.</p>
+      <ul class="footer-links">
+        <li><a href="#meals">Meals</a></li>
+        <li><a href="#jobs">Odd jobs</a></li>
+        <li><a href="#order">Order</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
