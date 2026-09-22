@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Business Name | Healthy meals and odd jobs for students</title>
+  <title>CampusGo | Healthy meals and odd jobs for students.</title>
   <meta name="description" content="Healthy ready-to-eat meals for students, plus a job board where students help each other with grocery runs, waiting in line, printing and more.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
 
@@ -12,6 +12,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
+
+  <script>
+    // Apply any saved theme choice immediately, before the page paints,
+    // so there's no flash of the wrong theme.
+    (function () {
+      try {
+        var saved = localStorage.getItem('campusgo-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,6 +41,7 @@
           <li><a href="#about">About</a></li>
         </ul>
       </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
     </div>
   </header>
 
@@ -264,5 +278,41 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var STORAGE_KEY = 'campusgo-theme';
+
+      function systemPrefersDark() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function currentTheme() {
+        var saved = root.getAttribute('data-theme');
+        if (saved === 'dark' || saved === 'light') return saved;
+        return systemPrefersDark() ? 'dark' : 'light';
+      }
+
+      function updateButtonLabel() {
+        var isDark = currentTheme() === 'dark';
+        btn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+        btn.setAttribute('aria-pressed', String(isDark));
+      }
+
+      function setTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) {}
+        updateButtonLabel();
+      }
+
+      btn.addEventListener('click', function () {
+        setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+      });
+
+      updateButtonLabel();
+    })();
+  </script>
 </body>
 </html>
