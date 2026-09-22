@@ -1,3 +1,12 @@
+/* =========================================================
+   Student meals + odd jobs site
+   Layout: flexbox only.
+   Palette: warm neutral base, green used sparingly as an accent.
+   Color tokens (light + dark) live in the blocks below.
+   ========================================================= */
+
+/* ---------- Color tokens: light (default) ---------- */
+
 :root {
   color-scheme: light;
 
@@ -522,7 +531,7 @@ section[id] {
 .form-slot iframe {
   display: block;
   width: 100%;
-  min-height: 640px;
+  min-height: 200px;
   border: 0;
 }
 
