@@ -1,5 +1,5 @@
 /* =========================================================
-   Student meals + odd jobs site
+   Student meals + drinks site
    Layout: flexbox only.
    Palette: warm neutral base, green used sparingly as an accent.
    Color tokens (light + dark) live in the blocks below.
@@ -414,11 +414,6 @@ section[id] {
   padding-top: 0;
 }
 
-.section--jobs {
-  background: var(--surface-alt);
-  border-block: 1.5px solid var(--line);
-}
-
 .section-head {
   display: flex;
   flex-direction: column;
@@ -486,7 +481,7 @@ section[id] {
 
 /* Image placeholder box - swap for a real <img> when photos are ready */
 .meal-image {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1 / 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -581,128 +576,10 @@ section[id] {
   border-radius: var(--radius-sm);
 }
 
-.placeholder-title,
-.board-title {
+.placeholder-title {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.3rem;
-}
-
-/* ---------- Odd jobs ---------- */
-
-.job-types {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.job-type {
-  flex: 1 1 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  padding: 1.4rem;
-  background: var(--surface);
-  border: 1.5px solid var(--line);
-  border-radius: var(--radius-sm);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.job-type:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 22px var(--shadow-color);
-}
-
-.job-type h3 {
-  font-weight: 800;
-  font-size: 1.2rem;
-}
-
-.job-type p {
-  color: var(--text-muted);
-}
-
-.steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  counter-reset: step;
-}
-
-.step {
-  flex: 1 1 220px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  counter-increment: step;
-}
-
-.step::before {
-  content: counter(step);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.3rem;
-  height: 2.3rem;
-  font-family: var(--font-display);
-  font-weight: 800;
-  color: var(--inverse-text);
-  background: var(--green);
-  border-radius: 50%;
-}
-
-.step h4 {
-  font-weight: 800;
-  font-size: 1.1rem;
-}
-
-.step p {
-  color: var(--text-muted);
-}
-
-.board {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
-  min-height: 10rem;
-  padding: 1.5rem;
-  text-align: center;
-  background: var(--surface);
-  border: 2px dashed var(--line);
-  border-radius: var(--radius);
-}
-
-.board p:last-child {
-  color: var(--text-muted);
-}
-
-.form-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 1.5rem;
-  margin-top: 3rem;
-}
-
-.form-panel {
-  flex: 1 1 340px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.form-panel h3 {
-  font-weight: 800;
-  font-size: 1.5rem;
-}
-
-.form-panel p {
-  color: var(--text-muted);
-}
-
-.form-panel .form-slot {
-  margin-top: 0.5rem;
 }
 
 /* ---------- About ---------- */
@@ -768,21 +645,16 @@ section[id] {
     padding-block: 3rem;
   }
 
-  /* flex: none lets each card grow to fit its content instead of
-     collapsing to zero height when the row wraps to one column */
+  /* Meal/drink option cards go full-width and a bit taller on mobile
+     so they feel substantial rather than shrinking to fit their content. */
   .slot {
     flex: none;
-    min-height: 0;
+    width: 100%;
+    min-height: 22rem;
   }
 
   .nav-list {
     width: 100%;
     justify-content: flex-start;
-  }
-}
-
-@media (max-width: 420px) {
-  .form-panel {
-    flex-basis: 100%;
   }
 }
