@@ -453,6 +453,7 @@ section[id] {
 
 .slot {
   flex: 1 1 220px;
+  max-width: 320px;
   min-width: 0;
   display: flex;
   flex-direction: column;
@@ -551,14 +552,16 @@ section[id] {
   background: var(--form-bg);
   border: 1.5px solid var(--form-border);
   border-radius: var(--radius);
-  padding: 1.1rem;
+  padding: 0.75rem;
   box-shadow: 0 8px 20px var(--shadow-color);
+  height: 680px;
+  overflow-y: auto;
 }
 
 .form-slot iframe {
   display: block;
   width: 100%;
-  min-height: 400px;
+  min-height: 340px;
   border: 0;
 }
 
@@ -568,7 +571,7 @@ section[id] {
   align-items: center;
   justify-content: center;
   gap: 0.35rem;
-  min-height: 12rem;
+  min-height: 8rem;
   padding: 1.5rem;
   text-align: center;
   color: var(--form-text);
@@ -650,6 +653,7 @@ section[id] {
   .slot {
     flex: none;
     width: 100%;
+    max-width: none;
     min-height: 22rem;
   }
 
