@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CampusGo | Healthy meals and quick drinks for students.</title>
-  <meta name="description" content="Healthy ready-to-eat meals and quick drinks for students">
+  <title>CampusGo | Healthy meals and drinks for students.</title>
+  <meta name="description" content="Healthy ready-to-eat meals and quick drinks for students, built around a student's busy schedule.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥗</text></svg>">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
     <section class="hero" id="top">
       <div class="container">
         <h1>One Call Closer.</h1>
-        <p class="lead">Healthy ready-to-eat meals and quick drinks for students.</p>
+        <p class="lead">Healthy ready-to-eat meals and quick drinks for students, built around a student's busy schedule.</p>
 
         <div class="tiles">
           <a class="tile tile--meals" href="#meals">
@@ -94,7 +94,7 @@
               <!-- Photo goes here later -->
               <span>Photo</span>
             </div>
-            <h4>Main 1</h4>
+            <h4>Chicken</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -105,14 +105,14 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Main 1</a>
+            <a class="btn btn--light" href="#order">Choose Chicken</a>
           </article>
 
           <article class="slot">
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Main 2</h4>
+            <h4>Pork</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -123,14 +123,14 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Main 2</a>
+            <a class="btn btn--light" href="#order">Choose Pork</a>
           </article>
 
           <article class="slot">
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Main 3</h4>
+            <h4>Tofu</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -141,7 +141,7 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Main 3</a>
+            <a class="btn btn--light" href="#order">Choose Tofu</a>
           </article>
 
         </div>
@@ -216,7 +216,7 @@
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Drink 1</h4>
+            <h4>Coffee Jelly</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -227,14 +227,14 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Drink 1</a>
+            <a class="btn btn--light" href="#order">Choose Coffee Jelly</a>
           </article>
 
           <article class="slot slot--tomato">
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Drink 2</h4>
+            <h4>Fruit Soda</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -245,7 +245,61 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Drink 2</a>
+            <a class="btn btn--light" href="#order">Choose Fruit Soda</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>Photo</span>
+            </div>
+            <h4>Bear Brand Milo</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Description</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Bear Brand Milo</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>Photo</span>
+            </div>
+            <h4>Instant Milk Tea</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Description</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Instant Milk Tea</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>Photo</span>
+            </div>
+            <h4>Water</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Description</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Water</a>
           </article>
 
         </div>
@@ -264,6 +318,11 @@
           EDIT THE QUICK DRINK OPTIONS HERE.
           Same pattern as the meal cards above: change the name, description
           and price, and swap the meal-image box for a real <img> when ready.
+
+          Each "Choose ..." button below scrolls down to the "Order a drink"
+          section further down the page (id="order-drinks"), which has its
+          own separate Jotform embed - a different form from the meal order
+          form above, since a drink-only order doesn't need to go through it.
         -->
         <div class="tray">
 
@@ -271,7 +330,7 @@
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Quick sip 1</h4>
+            <h4>Coffee Jelly</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -282,14 +341,14 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Quick sip 1</a>
+            <a class="btn btn--light" href="#order-drinks">Choose Coffee Jelly</a>
           </article>
 
           <article class="slot slot--tomato">
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Quick sip 2</h4>
+            <h4>Fruit Soda</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -300,14 +359,14 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Quick sip 2</a>
+            <a class="btn btn--light" href="#order-drinks">Choose Fruit Soda</a>
           </article>
 
           <article class="slot slot--tomato">
             <div class="meal-image">
               <span>Photo</span>
             </div>
-            <h4>Quick sip 3</h4>
+            <h4>Bear Brand Milo</h4>
             <dl class="details">
               <div class="detail">
                 <dt>Description</dt>
@@ -318,7 +377,43 @@
                 <dd class="fill"></dd>
               </div>
             </dl>
-            <a class="btn btn--light" href="#order">Choose Quick sip 3</a>
+            <a class="btn btn--light" href="#order-drinks">Choose Bear Brand Milo</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>Photo</span>
+            </div>
+            <h4>Instant Milk Tea</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Description</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order-drinks">Choose Instant Milk Tea</a>
+          </article>
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>Photo</span>
+            </div>
+            <h4>Water</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Description</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>Price</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order-drinks">Choose Water</a>
           </article>
 
         </div>
@@ -334,34 +429,50 @@
         </div>
 
         <div class="form-slot">
-    <iframe
-      id="JotFormIFrame-262635369538065"
-      title="Form"
-      onload="window.parent.scrollTo(0,0)"
-      allowtransparency="true"
-      allow="geolocation; microphone; camera; fullscreen; payment"
-      src="https://form.jotform.com/262635369538065"
-      frameborder="0"
-      style="min-width:100%;max-width:100%;height:539px;border:none;"
-      scrolling="yes"
-    >
-    </iframe>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262635369538065']", "https://form.jotform.com/")</script>
-    
+
+
+
+
+
+
+          
             <p class="placeholder-title">Order form coming soon</p>
             <p>Check back shortly to place your order.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ===================== ORDER A DRINK ===================== -->
+    <section class="section section--tight" id="order-drinks" aria-labelledby="order-drinks-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="order-drinks-title">Order a drink</h2>
+          <p>Enter your name and the drink you chose.</p>
+        </div>
+
+        <div class="form-slot">
+          <!--
+            JOTFORM SLOT (drink order)
+            This is a SEPARATE Jotform from the meal order form above -
+            build a short Jotform just for drink orders, then delete the
+            placeholder below and paste that embed code here.
+          -->
+          <div class="form-placeholder">
+            <p class="placeholder-title">Drink order form coming soon</p>
+            <p>Check back shortly to order a drink.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== ABOUT ===================== -->
     <section class="section" id="about" aria-labelledby="about-title">
       <div class="container">
         <div class="about">
           <h2 id="about-title">Made by students, for students</h2>
           <!-- EDIT: replace with your own team story -->
-          <p>We started this school project to solve a common problem for students: finding a healthy meal and a quick drink between classes. Our meals are ready to eat, and our drinks are made to quench any student's thirst.</p>
+          <p>We started this as a school project to solve a problem for students: finding a healthy meal (or a quick drink) between classes. Our meals and drinks are ready to eat and easy to order, made for a student's busy schedule.</p>
         </div>
       </div>
     </section>
@@ -375,7 +486,6 @@
       <ul class="footer-links">
         <li><a href="#meals">Meals</a></li>
         <li><a href="#drinks">Drinks</a></li>
-        <li><a href="#jobs">Odd jobs</a></li>
         <li><a href="#order">Order</a></li>
       </ul>
     </div>
