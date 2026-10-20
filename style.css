@@ -116,6 +116,10 @@
 
 /* ---------- Base ---------- */
 
+#notavail{
+   font-color: red;
+}
+
 *,
 *::before,
 *::after {
