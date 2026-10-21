@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CampusGo | Meals</title>
+  <meta name="description" content="Browse meal options and submit your CampusGo meal order.">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./favicon-192.png">
+  <link rel="apple-touch-icon" href="./favicon-512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script>
+    // Apply any saved theme choice immediately, before the page paints,
+    // so there's no flash of the wrong theme.
+    (function () {
+      try {
+        var saved = localStorage.getItem('campusgo-theme');
+        if (saved === 'dark' || saved === 'light') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head> 
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top">
+        <img src="./logo-header.png" alt="CampusGo logo" class="brand-logo">
+        CampusGo
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="meals.html">Meals</a></li>
+          <li><a href="drinks.html">Drinks</a></li>
+          <li><a href="index.html#delivery">Delivery</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙 Dark</button>
+    </div>
+  </header>
+  <main id="main">
+<section class="hero"><div class="container"><h1>Meals</h1><p class="lead">Build your meal, choose your sides, and place your order below.</p></div></section>
+<section class="section" id="meals" aria-labelledby="meals-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="meals-title">Build your meal</h2>
+          <p>Pick a main dish, a side, and an optional drink. Then fill in the order form below with what you picked.</p>
+        </div>
+
+        <!-- ============ MAIN DISH ============ -->
+        <h3 class="subhead subhead--first">Main dish</h3>
+        <!--
+          EDIT THE MAIN DISH OPTIONS HERE.
+          Each <article class="slot"> is one option. For each one:
+            1. Change "Main 1" to the dish name.
+            2. Type a short description inside the first <dd class="fill"> ... </dd>
+            3. Type the price inside the second <dd class="fill"> ... </dd>
+            4. To add a photo later, replace the <div class="meal-image"> ... </div>
+               with: <img src="your-photo.jpg" alt="Dish name">
+        -->
+        <div class="tray">
+
+          <article class="slot">
+            <div class="meal-image">
+              <img src="./chix.png" alt="Chicken Image">
+            
+            </div>
+            <h4>Chicken</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Sweet and Savory honey garlic chicken bites topped with sesame seeds, served with rice.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱99</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Chicken</a>
+          </article>
+
+          <article class="slot">
+            <div class="meal-image">
+              <img src="./pork.png" alt="Pork Image">
+              
+            </div>
+            <h4>Pork</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Tender pork slices marinated in soy, vinegar, garlic, ginger, and onions, served over rice.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱109</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Pork</a>
+          </article>
+
+          <article class="slot">
+            <div class="meal-image">
+              <img src="./tofu.png" alt="Tofu Image">
+            
+            </div>
+            <h4>Tofu</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Golden fried tofu cubes coated in rich oyster sauce and topped with fresh long green chilies.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱89</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Tofu</a>
+          </article>
+
+        </div>
+
+        <!-- ============ SIDE ============ -->
+        <h3 class="subhead">Side</h3>
+        <!-- EDIT THE SIDE OPTIONS HERE, same pattern as Main dish above. -->
+        <div class="tray">
+
+          <article class="slot slot--mango">
+            <div class="meal-image">
+              <span>No Photo Yet</span>
+            </div>
+            <h4>Sunny-Side-Up Egg</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>A sunny-side-up egg.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱15</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Side 1</a>
+          </article>
+
+          <article class="slot slot--mango">
+            <div class="meal-image">
+              <span>No Photo Yet</span>
+            </div>
+            <h4>Scrambled Eggs</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Just your usual scrambled eggs.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱15</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Side 2</a>
+          </article>
+
+          <article class="slot slot--mango">
+            <div class="meal-image">
+              <span>No Photo Yet</span>
+            </div>
+            <h4>Extra Rice</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>The usual carb-filled rice.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱15</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Side 3</a>
+          </article>
+
+          <article class="slot slot--mango">
+            <div class="meal-image">
+              <span>No Photo Yet</span>
+            </div>
+            <h4>Ginisang Sitaw</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Not available as of now.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱20</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order" id="notavail">NOT AVAILABLE YET!</a>
+          </article>
+
+          <article class="slot slot--mango">
+            <h4>No Sides</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>No sides included.</dt>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">No Sides</a>
+          </article>
+
+        </div>
+
+        <!-- ============ DRINK (OPTIONAL) ============ -->
+        <h3 class="subhead">Drink <span class="optional-tag">(optional)</span></h3>
+        <!-- EDIT THE DRINK OPTIONS HERE, same pattern as Main dish above. -->
+        <div class="tray">
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <span>No Photo Yet</span>
+            </div>
+            <h4>Fruit Soda</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Enjoy a refreshing burst of fruity goodness with our Lychee, Green Apple, and Strawberry sodas.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱49</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Fruit Soda</a>
+          </article>
+
+
+
+          <article class="slot slot--tomato">
+            <div class="meal-image">
+              <img src="./Water.png" alt="Water Image">
+            </div>
+            <h4>Water 500ml</h4>
+            <dl class="details">
+              <div class="detail">
+                <dt>Your usual, delicious bottle of water.</dt>
+                <dd class="fill"></dd>
+              </div>
+              <div class="detail">
+                <dt>₱15</dt>
+                <dd class="fill"></dd>
+              </div>
+            </dl>
+            <a class="btn btn--light" href="#order">Choose Water</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+<section class="section section--tight" id="order" aria-labelledby="order-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="order-title">Place your meal order</h2>
+          <p>Enter your name and the meal option you chose.</p>
+        </div>
+
+        <div class="form-slot">
+
+
+
+
+    <iframe
+      id="JotFormIFrame-262681284567064"
+      title="Meal Order"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allow="geolocation; microphone; camera; fullscreen; payment"
+      src="https://form.jotform.com/262681284567064"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="yes"
+    >
+    </iframe>
+    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-262681284567064']", "https://form.jotform.com/")</script>
+    
+
+
+          
+            <p class="placeholder-title">Order form coming soon</p>
+            <p>Check back shortly to place your order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 CampusGo.</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="meals.html">Meals</a></li>
+        <li><a href="drinks.html">Drinks</a></li>
+        <li><a href="index.html#delivery">Delivery</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="mailto:halaman6767@example.com">Email us</a></li>
+        <li><a href="https://instagram.com/campusgo.uc" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var STORAGE_KEY = 'campusgo-theme';
+
+      function systemPrefersDark() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+
+      function currentTheme() {
+        var saved = root.getAttribute('data-theme');
+        if (saved === 'dark' || saved === 'light') return saved;
+        return systemPrefersDark() ? 'dark' : 'light';
+      }
+
+      function updateButtonLabel() {
+        var isDark = currentTheme() === 'dark';
+        btn.textContent = isDark ? '☀️ Light' : '🌙 Dark';
+        btn.setAttribute('aria-pressed', String(isDark));
+      }
+
+      function setTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        try { localStorage.setItem(STORAGE_KEY, theme); } catch (e) {}
+        updateButtonLabel();
+      }
+
+      btn.addEventListener('click', function () {
+        setTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+      });
+
+      updateButtonLabel();
+    })();
+  </script>
+
+</body>
+</html>
