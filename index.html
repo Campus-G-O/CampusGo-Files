@@ -182,5 +182,137 @@
     })();
   </script>
 
+  
+<!-- CAMPUSGO TEMPORARY CLOSURE SCREEN -->
+<div id="closure-screen" class="closure-screen" style="display: none;">
+    <div class="closure-card">
+        <div class="closure-icon">🥡</div>
+
+        <h1>CampusGo Is Taking a Break!</h1>
+
+        <p class="closure-message">
+            We're sorry, but we're not accepting orders right now.
+            We may be temporarily out of stock or preparing for our next
+            ordering schedule.
+        </p>
+
+        <div class="closure-date">
+            <span>📅</span>
+            <div>
+                <strong>PLEASE CHECK BACK ON</strong>
+                <p id="reopen-date">October 23, 2026</p>
+            </div>
+        </div>
+
+        <p class="closure-thanks">
+            Thank you for your patience and support! 💚
+        </p>
+    </div>
+</div>
+
+<style>
+    .closure-screen {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #f1f8e9;
+        font-family: Arial, sans-serif;
+    }
+
+    .closure-card {
+        width: 100%;
+        max-width: 520px;
+        padding: 35px 25px;
+        box-sizing: border-box;
+        text-align: center;
+        background: white;
+        border-radius: 22px;
+        border-top: 8px solid #2e7d32;
+        box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .closure-icon {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+
+    .closure-card h1 {
+        margin: 0 0 18px;
+        color: #1b5e20;
+        font-size: clamp(25px, 5vw, 34px);
+    }
+
+    .closure-message {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .closure-date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        margin: 25px 0;
+        padding: 18px 12px;
+        background: #e8f5e9;
+        border-radius: 12px;
+        color: #1b5e20;
+    }
+
+    .closure-date > span {
+        font-size: 30px;
+    }
+
+    .closure-date strong {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .closure-date p {
+        margin: 8px 0 0;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .closure-thanks {
+        margin-bottom: 0;
+        color: #388e3c;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+        .closure-card {
+            padding: 28px 18px;
+        }
+    }
+</style>
+
+<script>
+    // CHANGE THIS TO true WHEN CAMPUSGO IS CLOSED
+    const CAMPUSGO_CLOSED = true;
+
+    // Update this date whenever your reopening schedule changes
+    const CAMPUSGO_REOPEN_DATE = "October 23, 2026";
+
+    document.getElementById("reopen-date").textContent =
+        CAMPUSGO_REOPEN_DATE;
+
+    if (CAMPUSGO_CLOSED) {
+        document.getElementById("closure-screen").style.display = "flex";
+
+        // Hide the website behind the closure screen
+        document.body.style.overflow = "hidden";
+    }
+</script>
+
+  
 </body>
 </html>
